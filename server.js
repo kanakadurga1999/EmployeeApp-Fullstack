@@ -10,7 +10,7 @@ const connectDB = require('./config/dbConnection');
 const employeesRoute = require('./routes/api/employees');
 const authRoute = require('./routes/api/auth');
 const refreshRoutes = require('./routes/api/refresh');
-//  const userRoutes = require('./routes/api/userRoutes')
+  const userRoutes = require('./routes/api/userRoutes')
 
 
 
@@ -54,7 +54,7 @@ app.use('/api/v1/refresh', refreshRoutes);
 
 app.use('/api/v1/dash/employees', employeesRoute);
 
-//  app.use('/users', userRoutes); // Use only for Developement phase
+  app.use('/users', userRoutes); // Use only for Developement phase
 
 
 // serve static files
