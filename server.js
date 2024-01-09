@@ -29,7 +29,7 @@ const newConnectDB = async () => {
 
 // Cross Origin Resource Sharing
 app.use(cors({
-    origin: ['http://localhost:3000','https://cheerful-teddy-moth.cyclic.app/'],
+    origin: ['http://localhost:3000','https://cheerful-teddy-moth.cyclic.app/','http://localhost:4000'],
     methods: ['GET','POST','PUT','DELETE'],
     credentials: true
 }))
