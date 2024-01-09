@@ -58,9 +58,9 @@ app.use('/api/v1/dash/employees', employeesRoute);
 
 
 // serve static files
-app.use(express.static(path.join(__dirname, './client/mernemployeefrontend/build')));
+app.use(express.static(path.join(__dirname, './client/build')));
 app.get('*', function (_, res){
-    res.sendFile(path.join(__dirname, './client/mernemployeefrontend/build/index.html'), function(error){
+    res.sendFile(path.join(__dirname, './client/build/index.html'), function(error){
         res.status(500).send(error);
     })
 })
